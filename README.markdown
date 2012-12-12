@@ -14,8 +14,8 @@ Right now, that consists of one class: `StrictAdapter`. This
 plus optionally give you an overall performance view on how
 your `Adapter` is doing in the code you control.
 
-This is available as a JAR file from the downloads area of
-this GitHub repo. The project itself is set up as an Android
+This is [available as a JAR file](https://github.com/commonsguy/downloads).
+The project itself is set up as an Android
 library project, in case you wish to use the source code in
 that fashion.
 
