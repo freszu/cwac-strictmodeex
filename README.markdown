@@ -59,6 +59,10 @@ A copy of compatible JARs can be found in the `libs/` directory
 of the project, though you are welcome to try newer ones, or
 ones that you have patched yourself.
 
+This project should work on API Level 7 and higher, except for any portions that
+may be noted otherwise in this document. Please report bugs if you find features
+that do not work on API Level 7 and are not noted as requiring a higher version.
+
 Version
 -------
 This is version v0.1 of this module, meaning it is brand-spankin'
