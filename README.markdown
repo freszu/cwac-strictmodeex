@@ -54,7 +54,7 @@ your `getView()` was running.
 
 Dependencies
 ------------
-This project relies upon the [CWAC AdapterWrapper][adapter] project.
+This project relies upon the [CWAC AdapterWrapper](https://github.com/commonsguy/cwac-adapter) project.
 A copy of compatible JARs can be found in the `libs/` directory
 of the project, though you are welcome to try newer ones, or
 ones that you have patched yourself.
