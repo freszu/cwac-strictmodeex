@@ -14,7 +14,6 @@ Right now, that consists of one class: `StrictAdapter`. This
 plus optionally give you an overall performance view on how
 your `Adapter` is doing in the code you control.
 
-
 Installation
 ------------
 This Android library project is 
@@ -49,6 +48,11 @@ dependencies {
 
 Or, if you cannot use SSL, use `http://repo.commonsware.com` for the repository
 URL. This should automatically pull down the CWAC-Adapter dependency.
+=======
+This is [available as a JAR file](https://github.com/commonsguy/downloads).
+The project itself is set up as an Android
+library project, in case you wish to use the source code in
+that fashion.
 
 Usage: StrictAdapter
 --------------------
