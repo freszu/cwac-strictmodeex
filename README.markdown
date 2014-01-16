@@ -14,10 +14,41 @@ Right now, that consists of one class: `StrictAdapter`. This
 plus optionally give you an overall performance view on how
 your `Adapter` is doing in the code you control.
 
-This is available as a JAR file from the downloads area of
-this GitHub repo. The project itself is set up as an Android
-library project, in case you wish to use the source code in
-that fashion.
+
+Installation
+------------
+This Android library project is 
+[available as a JAR](https://gihub.com/commonsguy/cwac-strictmodeex/releases).
+If you wish to use the JAR, you will need to also add the JAR from
+[the CWAC-Adapter project](http://github.com/commonsguy/cwac-adapter) to your
+project.
+
+Also note that if you plan to use this as an Android library project
+in source form, you
+will also need to download [the CWAC-Adapter project](http://github.com/commonsguy/cwac-adapter)
+(and, if needed, modify this project's configuration to point to your copy of
+CWAC-Adapter's library project). Alternatively, download the CWAC-Adapter JAR into
+the `libs/` directory of your clone of this project and remove the dependency on
+the CWAC-Adapter library project.
+
+This project is also available as
+an artifact for use with Gradle. To use that, add the following
+blocks to your `build.gradle` file:
+
+```groovy
+repositories {
+    maven {
+        url "https://repo.commonsware.com.s3.amazonaws.com"
+    }
+}
+
+dependencies {
+    compile 'com.commonsware.cwac:strictmodeex:0.3.0'
+}
+```
+
+Or, if you cannot use SSL, use `http://repo.commonsware.com` for the repository
+URL. This should automatically pull down the CWAC-Adapter dependency.
 
 Usage: StrictAdapter
 --------------------
@@ -52,16 +83,9 @@ the total number of calls, and it could easily represent background
 work from other processes that happened to steal a time slice while
 your `getView()` was running.
 
-Dependencies
-------------
-This project relies upon the [CWAC AdapterWrapper][adapter] project.
-A copy of compatible JARs can be found in the `libs/` directory
-of the project, though you are welcome to try newer ones, or
-ones that you have patched yourself.
-
 Version
 -------
-This is version v0.1 of this module, meaning it is brand-spankin'
+This is version v0.3.0 of this module, meaning it is brand-spankin'
 new.
 
 Demo
@@ -100,4 +124,5 @@ Who Made This?
 
 Release Notes
 -------------
-* v0.1.0: initial release
+- v0.3.0: migrated to Gradle, published AAR
+- v0.1.0: initial release

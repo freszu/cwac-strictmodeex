@@ -82,11 +82,15 @@
     <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml" />
 
-  <target name="jar" depends="debug">
-      <jar
-          destfile="bin/CWAC-StrictModeEx.jar"
-          basedir="bin/classes"
-      />
-  </target>
+	<target name="jar" depends="release">
+		<delete file="bin/CWAC-StrictModeEx.jar" />
+    <jar destfile="bin/CWAC-StrictModeEx.jar">
+      <fileset dir="bin/classes">
+        <exclude name="**/BuildConfig.class" />
+        <exclude name="**/R.class" />
+        <exclude name="**/R$*.class" />
+      </fileset>
+    </jar>
+	</target>
 
 </project>
