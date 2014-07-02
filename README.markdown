@@ -22,6 +22,8 @@ If you wish to use the JAR, you will need to also add the JAR from
 [the CWAC-Adapter project](http://github.com/commonsguy/cwac-adapter) to your
 project.
 
+NOTE: The JAR name, as of v0.3.1, has a `cwac-` prefix, to help distinguish it from other JARs.
+
 Also note that if you plan to use this as an Android library project
 in source form, you
 will also need to download [the CWAC-Adapter project](http://github.com/commonsguy/cwac-adapter)
@@ -42,17 +44,12 @@ repositories {
 }
 
 dependencies {
-    compile 'com.commonsware.cwac:strictmodeex:0.3.0'
+    compile 'com.commonsware.cwac:strictmodeex:0.3.+'
 }
 ```
 
 Or, if you cannot use SSL, use `http://repo.commonsware.com` for the repository
 URL. This should automatically pull down the CWAC-Adapter dependency.
-=======
-This is [available as a JAR file](https://github.com/commonsguy/downloads).
-The project itself is set up as an Android
-library project, in case you wish to use the source code in
-that fashion.
 
 Usage: StrictAdapter
 --------------------
@@ -89,7 +86,7 @@ your `getView()` was running.
 
 Version
 -------
-This is version v0.3.0 of this module, meaning it is brand-spankin'
+This is version v0.3.1 of this module, meaning it is brand-spankin'
 new.
 
 Demo
@@ -106,7 +103,8 @@ file.
 Questions
 ---------
 If you have questions regarding the use of this code, please post a question
-on [StackOverflow](http://stackoverflow.com/questions/ask) tagged with `commonsware` and `android`. Be sure to indicate
+on [StackOverflow](http://stackoverflow.com/questions/ask) tagged with
+`commonsware-cwac` and `android` after [searching to see if there already is an answer](https://stackoverflow.com/search?q=[commonsware-cwac]+strictmodeex). Be sure to indicate
 what CWAC module you are having issues with, and be sure to include source code 
 and stack traces if you are encountering crashes.
 
@@ -128,5 +126,6 @@ Who Made This?
 
 Release Notes
 -------------
+- v0.3.1: Gradle updates, fixed manifest for merging, added `cwac-` to JAR
 - v0.3.0: migrated to Gradle, published AAR
 - v0.1.0: initial release
