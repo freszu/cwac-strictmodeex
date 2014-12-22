@@ -86,7 +86,7 @@ your `getView()` was running.
 
 Version
 -------
-This is version v0.3.1 of this module, meaning it is brand-spankin'
+This is version v0.3.2 of this module, meaning it is brand-spankin'
 new.
 
 Demo
@@ -126,6 +126,7 @@ Who Made This?
 
 Release Notes
 -------------
+- v0.3.2: updated for Android Studio 1.0 and new AAR publishing system
 - v0.3.1: Gradle updates, fixed manifest for merging, added `cwac-` to JAR
 - v0.3.0: migrated to Gradle, published AAR
 - v0.1.0: initial release
